@@ -1,0 +1,54 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 35%;
+  @include breakpoint-up(large) {
+    margin-top: 8%;
+    img {
+      height: auto;
+      width: 40%;
+    }
+  }
+}
+.container_zellan_text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30vh;
+}
+.zellan_logo_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a b"
+    "c c";
+
+  & h1 {
+    justify-self: right;
+    color: $ZPink;
+    font-size: 2rem;
+    @include breakpoint-up(medium) {
+      font-size: 3.7rem;
+      //padding-right: 1%;
+    }
+  }
+  & h3 {
+    align-self: center;
+    color: $ZPink;
+    font-weight: normal;
+    font-size: 0.8rem;
+    padding-left: 4%;
+    @include breakpoint-up(medium) {
+      font-size: 1.4rem;
+      // padding-left: 1%;
+    }
+  }
+  & h4 {
+    grid-area: c;
+    color: $ZGreyishBlue;
+    justify-self: center;
+    font-size: 0.8rem;
+    @include breakpoint-up(medium) {
+      font-size: 1.4rem;
+    }
+  }
+}

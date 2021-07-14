@@ -1,0 +1,107 @@
+.meaning {
+  display: inline-block;
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-areas:
+      "a b d"
+      "a c d";
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  &__left {
+    display: none;
+    @include breakpoint-up(large) {
+      grid-area: a;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .left {
+      @include breakpoint-up(large) {
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        left: -100%;
+        transition: all 0.5s;
+      }
+    }
+    .leftTranslate {
+      @include breakpoint-up(large) {
+        left: 0%;
+      }
+    }
+  }
+  &__right {
+    display: none;
+    @include breakpoint-up(large) {
+      grid-area: d;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .right {
+      @include breakpoint-up(large) {
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        right: -100%;
+        transition: all 0.5s;
+      }
+    }
+    .rightTranslate {
+      @include breakpoint-up(large) {
+        right: 0%;
+      }
+    }
+  }
+  &__title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    color: $ZPink;
+    @include breakpoint-down(small) {
+      //flex-direction: column;
+      display: block;
+      width: fit-content;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include breakpoint-up(large) {
+      grid-area: b;
+      padding-left: 10%;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    @include breakpoint-down(small) {
+      align-self: center;
+    }
+    @include breakpoint-down(medium) {
+      font-size: 4rem;
+    }
+    @include breakpoint-up(large) {
+      font-size: 8rem;
+    }
+  }
+  h3 {
+    @include breakpoint-down(medium) {
+      font-size: 1.4rem;
+      align-self: center;
+      padding-top: 0.1rem;
+    }
+    @include breakpoint-up(large) {
+      font-size: 3rem;
+      left: 5%;
+      padding-top: 1.25rem;
+    }
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem;
+    color: $ZGreyishBlue;
+    @include breakpoint-up(medium) {
+      grid-area: c;
+      font-size: 2rem;
+    }
+  }
+}

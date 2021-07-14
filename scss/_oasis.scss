@@ -1,0 +1,69 @@
+.trigger2 {
+  position: relative;
+  bottom: 100vh;
+}
+.oasisContainer {
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+  z-index: -5;
+  @include breakpoint-down(small) {
+    height: 20vh;
+  }
+  @include breakpoint-down(medium) {
+    height: 35vh;
+  }
+}
+.oasisImage {
+  width: 70%;
+  position: absolute;
+  object-fit: cover; /* the image is squished because of the height set at 100% and this solves it */
+  z-index: -2;
+  right: 50%;
+  transform: translateX(50%);
+  @include breakpoint-down(medium) {
+    width: 100%;
+  }
+}
+.oasisTxt {
+  padding: 2rem 0rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  color: white;
+  font-weight: bold;
+  background-color: $ZPink;
+
+  & h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
+    & span:first-child {
+      font-size: 2rem;
+      align-self: flex-start;
+    }
+    & span:last-child {
+      font-size: 5rem;
+      line-height: 80%;
+      overflow: hidden;
+    }
+    @include breakpoint-down(small) {
+      & span:first-child {
+        font-size: 1rem;
+      }
+      & span:last-child {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  & p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 3rem 10rem 2rem 10rem;
+    @include breakpoint-down(small) {
+      padding: 3rem 2rem 2rem 2rem;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.expect {
+  & img {
+    width: 10vw;
+    @include breakpoint-down(small) {
+      position: absolute;
+      width: 2rem;
+      height: auto;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+
+  &__whatTo {
+    color: $ZPink;
+    @include breakpoint-down(small) {
+      margin: 1.5rem;
+      font-size: 1.5rem;
+      & span {
+        font-size: 4rem;
+      }
+    }
+    @include breakpoint-up(medium) {
+      grid-area: a;
+      font-size: 2rem;
+      align-self: center;
+      & span {
+        font-size: 6rem;
+      }
+    }
+    @include breakpoint-up(large) {
+      font-size: 3rem;
+      & span {
+        font-size: 8rem;
+      }
+    }
+  }
+  &__txt {
+    color: $ZVioletBlue;
+    padding: 0 1rem 0 1rem;
+    justify-self: center;
+    text-align: center;
+    overflow: visible;
+    @include breakpoint-down(small) {
+      display: flex;
+      flex-direction: row;
+      margin: 1rem;
+      padding: 0;
+    }
+  }
+  & p {
+    text-align: start;
+    @include breakpoint-down(small) {
+      padding-left: 3rem;
+    }
+    @include breakpoint-up(medium) {
+      transform: translateX(10%);
+    }
+  }
+
+  // POP ANIMATION
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-areas:
+      "a a a b c"
+      "d e f g h";
+    grid-row-gap: 3rem;
+    padding: 15vw;
+
+    &__ArtPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.1s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+        100% {
+          scale: (1);
+        }
+      }
+    }
+    &__ContentPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.6s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+      }
+    }
+    &__EventPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.8s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+      }
+    }
+    &__WorkshopPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.3s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+        100% {
+          scale: (1);
+        }
+      }
+    }
+    &__ArtisanPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.2s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+        100% {
+          scale: (1);
+        }
+      }
+    }
+    &__FilmPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.5s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+        100% {
+          scale: (1);
+        }
+      }
+    }
+    &__HubPop {
+      animation: pop 0.5s ease-in-out;
+      animation-delay: 0.7s;
+      @keyframes pop {
+        50% {
+          transform: scale(1.35);
+        }
+        65% {
+          transform: scale(1);
+        }
+        80% {
+          transform: scale(1.2);
+        }
+        100% {
+          scale: (1);
+        }
+      }
+    }
+  }
+}
