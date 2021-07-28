@@ -211,6 +211,7 @@ li.fade {
   }
   .logo img {
     width: 40%;
+    height: auto;
   }
 }
 
@@ -220,6 +221,7 @@ li.fade {
   }
   .logo img {
     width: 25%;
+    height: auto;
   }
 }
 
