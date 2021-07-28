@@ -205,7 +205,7 @@ li.fade {
   margin-top: 35%;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 48em) {
   .logo {
     margin-top: 8%;
   }
@@ -221,7 +221,7 @@ li.fade {
     text-align: center;
   }
   .logo img {
-    width: 40%;
+    width: 50%;
     height: auto;
   }
 }
