@@ -9,6 +9,7 @@
       height: auto;
     }
   }
+  //
   @include breakpoint-down(small) {
     display: inline-block;
     text-align: center;
