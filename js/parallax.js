@@ -46,9 +46,6 @@ else {
   (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
     (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
 }
-document.write(
-  "<p>Your viewport width is " + viewportwidth + "x" + viewportheight + "</p>"
-);
 //-->
 
 let controllerParallax = new ScrollMagic.Controller(); // activates the controller: to be done everytime.
