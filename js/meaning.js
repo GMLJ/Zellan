@@ -1,19 +1,10 @@
-var left = document.querySelector('.left'),
-    right = document.querySelector('.right');
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: { duration: 500 },
+});
 
-window.addEventListener("scroll", function(){
-  if (window.pageYOffset > 500){
-  left.classList.add('leftTranslate'),
-  right.classList.add('rightTranslate');
-} else if (window.pageYOffset < 500){
-  left.classList.remove('leftTranslate'),
-  right.classList.remove('rightTranslate');
-} 
-})
-
-window.addEventListener("scroll", function(){
-if (window.pageYOffset > 1000){
-  left.classList.remove('leftTranslate'),
-  right.classList.remove('rightTranslate');
-}
-})
+new ScrollMagic.Scene({ triggerElement: ".meaning__title" })
+  .setClassToggle(".left", "leftTranslate") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".meaning__title" })
+  .setClassToggle(".right", "rightTranslate") // add class toggle
+  .addTo(controller);

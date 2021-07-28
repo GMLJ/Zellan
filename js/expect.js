@@ -1,39 +1,26 @@
-var expectArt = document.querySelector('.expect__Art'),
-    expectContent = document.querySelector('.expect__Content');
-    expectEvent = document.querySelector('.expect__Event');
-    expectWorkshop = document.querySelector('.expect__Workshop');
-    expectArtisan = document.querySelector('.expect__Artisan');
-    expectFilm = document.querySelector('.expect__Film');
-    expectHub = document.querySelector('.expect__Hub');
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: { duration: 500 },
+});
 
-window.addEventListener("scroll", function(){
-  if (window.pageYOffset > 3500){
-  expectArt.classList.add('expect__ArtPop'),
-  expectContent.classList.add('expect__ContentPop');
-  expectEvent.classList.add('expect__EventPop');
-  expectWorkshop.classList.add('expect__WorkshopPop');
-  expectArtisan.classList.add('expect__ArtisanPop');
-  expectFilm.classList.add('expect__FilmPop');
-  expectHub.classList.add('expect__HubPop');
-} else if (window.pageYOffset < 3500){
-  expectArt.classList.remove('expect__ArtPop'),
-  expectContent.classList.remove('expect__ContentPop');
-  expectEvent.classList.remove('expect__EventPop');
-  expectWorkshop.classList.remove('expect__WorkshopPop');
-  expectArtisan.classList.remove('expect__ArtisanPop');
-  expectFilm.classList.remove('expect__FilmPop');
-  expectHub.classList.remove('expect__HubPop');
-} 
-})
-
-window.addEventListener("scroll", function(){
-if (window.pageYOffset > 4000){
-  expectArt.classList.remove('expect__ArtPop'),
-  expectContent.classList.remove('expect__ContentPop');
-  expectEvent.classList.remove('expect__EventPop');
-  expectWorkshop.classList.remove('expect__WorkshopPop');
-  expectArtisan.classList.remove('expect__ArtisanPop');
-  expectFilm.classList.remove('expect__FilmPop');
-  expectHub.classList.remove('expect__HubPop');
-}
-})
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Art", "expect__ArtPop") // add class toggle
+  //.addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Content", "expect__ContentPop") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Event", "expect__EventPop") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Workshop", "expect__WorkshopPop") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Artisan", "expect__ArtisanPop") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Film", "expect__FilmPop") // add class toggle
+  .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: ".expect__txt" })
+  .setClassToggle(".expect__Hub", "expect__HubPop") // add class toggle
+  .addTo(controller);
