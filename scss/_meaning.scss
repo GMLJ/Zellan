@@ -1,6 +1,6 @@
 .meaning {
   display: inline-block;
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     display: grid;
     grid-template-areas:
       "a b d"
@@ -10,13 +10,13 @@
 
   &__left {
     display: none;
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       grid-area: a;
       display: flex;
       justify-content: flex-start;
     }
     .left {
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
         max-width: 80%;
         height: auto;
         position: relative;
@@ -25,20 +25,20 @@
       }
     }
     .leftTranslate {
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
         left: 0%;
       }
     }
   }
   &__right {
     display: none;
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       grid-area: d;
       display: flex;
       justify-content: flex-end;
     }
     .right {
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
         max-width: 80%;
         height: auto;
         position: relative;
@@ -47,7 +47,7 @@
       }
     }
     .rightTranslate {
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
         right: 0%;
       }
     }
@@ -83,10 +83,20 @@
     }
   }
   h3 {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
       font-size: 1.4rem;
       align-self: center;
       padding-top: 0.1rem;
+    }
+    @include breakpoint-up(small) {
+      font-size: 1.6rem;
+      align-self: flex-start;
+      padding-top: 0.35rem;
+    }
+    @include breakpoint-up(medium) {
+      font-size: 1.2rem;
+      align-self: flex-start;
+      padding-top: 0.2rem;
     }
     @include breakpoint-up(large) {
       font-size: 3rem;

@@ -1,7 +1,7 @@
 .expect {
   & img {
     width: 10vw;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       position: absolute;
       width: 2rem;
       height: auto;
@@ -12,7 +12,7 @@
 
   &__whatTo {
     color: $ZPink;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       margin: 1.5rem;
       font-size: 1.5rem;
       & span {
@@ -40,7 +40,7 @@
     justify-self: center;
     text-align: center;
     overflow: visible;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       display: flex;
       flex-direction: row;
       margin: 1rem;
@@ -49,7 +49,7 @@
   }
   & p {
     text-align: start;
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       padding-left: 3rem;
     }
     @include breakpoint-up(medium) {

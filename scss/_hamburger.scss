@@ -44,7 +44,7 @@ nav {
   position: fixed;
   transition: all 0.5s ease-in-out;
   transform: translate(-100%);
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     &.open {
       opacity: 1;
       display: inline-block;
@@ -73,7 +73,7 @@ nav {
     clip-path: circle(2000px at 90% -20%);
     pointer-events: all;
   }
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     padding: 0 0 10% 10%;
     align-items: flex-end;
     padding-right: 6%;

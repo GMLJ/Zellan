@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -12,7 +12,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 5000px;
 }
 
 .btn {
@@ -68,7 +67,7 @@ a {
 
 .hamburgerRotate {
   -webkit-transform: rotate(-25deg);
-  transform: rotate(-25deg);
+          transform: rotate(-25deg);
 }
 
 nav {
@@ -85,17 +84,17 @@ nav {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translate(-100%);
-  transform: translate(-100%);
+          transform: translate(-100%);
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .imgCanopy.open {
     opacity: 1;
     display: inline-block;
     height: 100%;
     bottom: 0;
     -webkit-transform: translate(10%);
-    transform: translate(10%);
+            transform: translate(10%);
   }
 }
 
@@ -104,15 +103,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   width: 100%;
   font-size: 3.25rem;
@@ -121,7 +120,7 @@ nav {
   background: #e1185d;
   /* CREATING MASK HERE */
   -webkit-clip-path: circle(50px at 90% -20%);
-  clip-path: circle(50px at 90% -20%);
+          clip-path: circle(50px at 90% -20%);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   pointer-events: none;
@@ -129,16 +128,16 @@ nav {
 
 .nav-links.open {
   -webkit-clip-path: circle(2000px at 90% -20%);
-  clip-path: circle(2000px at 90% -20%);
+          clip-path: circle(2000px at 90% -20%);
   pointer-events: all;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .nav-links {
     padding: 0 0 10% 10%;
     -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding-right: 6%;
   }
 }
@@ -169,7 +168,7 @@ nav {
 
 .nav-links li:hover span {
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .nav-links li:nth-child(1) {
@@ -201,8 +200,8 @@ li.fade {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 35%;
 }
 
@@ -211,7 +210,6 @@ li.fade {
     margin-top: 8%;
   }
   .logo img {
-    height: auto;
     width: 40%;
   }
 }
@@ -221,8 +219,8 @@ li.fade {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30vh;
 }
 
@@ -230,13 +228,13 @@ li.fade {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "a b" "c c";
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "a b" "c c";
 }
 
 .zellan_logo_text h1 {
   -ms-grid-column-align: right;
-  justify-self: right;
+      justify-self: right;
   color: #e1185d;
   font-size: 2rem;
 }
@@ -249,8 +247,8 @@ li.fade {
 
 .zellan_logo_text h3 {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #e1185d;
   font-weight: normal;
   font-size: 0.8rem;
@@ -270,7 +268,7 @@ li.fade {
   grid-area: c;
   color: #1b75bc;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   font-size: 0.8rem;
 }
 
@@ -284,13 +282,13 @@ li.fade {
   display: inline-block;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning {
     display: -ms-grid;
     display: grid;
-    grid-template-areas: "a b d" "a c d";
+        grid-template-areas: "a b d" "a c d";
     -ms-grid-columns: 1fr 4fr 1fr;
-    grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
   }
 }
 
@@ -298,7 +296,7 @@ li.fade {
   display: none;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__left {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -307,12 +305,12 @@ li.fade {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__left .left {
     max-width: 80%;
     height: auto;
@@ -323,7 +321,7 @@ li.fade {
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__left .leftTranslate {
     left: 0%;
   }
@@ -333,19 +331,19 @@ li.fade {
   display: none;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__right {
     grid-area: d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__right .right {
     max-width: 80%;
     height: auto;
@@ -356,7 +354,7 @@ li.fade {
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .meaning__right .rightTranslate {
     right: 0%;
   }
@@ -368,8 +366,8 @@ li.fade {
   display: flex;
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #e1185d;
 }
 
@@ -381,7 +379,7 @@ li.fade {
     width: fit-content;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -401,8 +399,8 @@ li.fade {
 @media (max-width: 48em) {
   .meaning h1 {
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -418,13 +416,31 @@ li.fade {
   }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 48em) {
   .meaning h3 {
     font-size: 1.4rem;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     padding-top: 0.1rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .meaning h3 {
+    font-size: 1.6rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 0.35rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .meaning h3 {
+    font-size: 1.2rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 0.2rem;
   }
 }
 
@@ -462,8 +478,8 @@ li.fade {
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 80vh;
   z-index: -5;
 }
@@ -484,12 +500,12 @@ li.fade {
   width: 160%;
   position: absolute;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   /* the image is squished because of the height set at 100% and this solves it */
   z-index: -3;
   right: 50%;
   -webkit-transform: translateX(60%);
-  transform: translateX(60%);
+          transform: translateX(60%);
 }
 
 @media (max-width: 48em) {
@@ -498,7 +514,7 @@ li.fade {
     padding-top: 20%;
     right: 50%;
     -webkit-transform: translateX(50%);
-    transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
@@ -515,11 +531,11 @@ li.fade {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   color: white;
   font-weight: bold;
@@ -532,11 +548,11 @@ li.fade {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -545,7 +561,7 @@ li.fade {
 .camelLadyTxt h1 span:first-child {
   font-size: 2rem;
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
 }
 
 .camelLadyTxt h1 span:last-child {
@@ -584,8 +600,8 @@ li.fade {
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   z-index: -5;
 }
@@ -606,12 +622,12 @@ li.fade {
   width: 70%;
   position: absolute;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   /* the image is squished because of the height set at 100% and this solves it */
   z-index: -2;
   right: 50%;
   -webkit-transform: translateX(50%);
-  transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 @media (max-width: 64em) {
@@ -627,11 +643,11 @@ li.fade {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   color: white;
   font-weight: bold;
@@ -644,11 +660,11 @@ li.fade {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -657,7 +673,7 @@ li.fade {
 .oasisTxt h1 span:first-child {
   font-size: 2rem;
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
 }
 
 .oasisTxt h1 span:last-child {
@@ -693,15 +709,15 @@ li.fade {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .expect img {
   width: 10vw;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   .expect img {
     position: absolute;
     width: 2rem;
@@ -713,7 +729,7 @@ li.fade {
   color: #e1185d;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   .expect__whatTo {
     margin: 1.5rem;
     font-size: 1.5rem;
@@ -730,8 +746,8 @@ li.fade {
     grid-area: a;
     font-size: 2rem;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .expect__whatTo span {
     font-size: 6rem;
@@ -751,20 +767,20 @@ li.fade {
   color: #1b18bc;
   padding: 0 1rem 0 1rem;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   text-align: center;
   overflow: visible;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   .expect__txt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 1rem;
     padding: 0;
   }
@@ -774,7 +790,7 @@ li.fade {
   text-align: start;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   .expect p {
     padding-left: 3rem;
   }
@@ -783,7 +799,7 @@ li.fade {
 @media (min-width: 64em) {
   .expect p {
     -webkit-transform: translateX(10%);
-    transform: translateX(10%);
+            transform: translateX(10%);
   }
 }
 
@@ -791,28 +807,28 @@ li.fade {
   .expect {
     display: -ms-grid;
     display: grid;
-    grid-template-areas: "a a a b c" "d e f g h";
+        grid-template-areas: "a a a b c" "d e f g h";
     grid-row-gap: 3rem;
     padding: 15vw;
   }
   .expect__ArtPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+            animation-delay: 0.1s;
   }
   @-webkit-keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
@@ -821,15 +837,15 @@ li.fade {
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
@@ -837,62 +853,62 @@ li.fade {
   }
   .expect__ContentPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
   }
   .expect__EventPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
+            animation-delay: 0.8s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
   }
   .expect__WorkshopPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
@@ -900,22 +916,22 @@ li.fade {
   }
   .expect__ArtisanPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+            animation-delay: 0.2s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
@@ -923,22 +939,22 @@ li.fade {
   }
   .expect__FilmPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+            animation-delay: 0.5s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
@@ -946,22 +962,22 @@ li.fade {
   }
   .expect__HubPop {
     -webkit-animation: pop 0.5s ease-in-out;
-    animation: pop 0.5s ease-in-out;
+            animation: pop 0.5s ease-in-out;
     -webkit-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+            animation-delay: 0.7s;
   }
   @keyframes pop {
     50% {
       -webkit-transform: scale(1.35);
-      transform: scale(1.35);
+              transform: scale(1.35);
     }
     65% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
     }
     80% {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+              transform: scale(1.2);
     }
     100% {
       scale: 1;
