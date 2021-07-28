@@ -217,10 +217,11 @@ li.fade {
 
 @media (max-width: 48em) {
   .logo {
-    margin-top: 8%;
+    display: inline-block;
+    text-align: center;
   }
   .logo img {
-    width: 25%;
+    width: 40%;
     height: auto;
   }
 }
