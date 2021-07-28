@@ -209,6 +209,18 @@ li.fade {
   .logo {
     margin-top: 8%;
   }
+  .logo img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 48em) {
+  .logo {
+    margin-top: 8%;
+  }
+  .logo img {
+    width: 25%;
+  }
 }
 
 .container_zellan_text {

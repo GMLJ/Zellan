@@ -4,9 +4,15 @@
   margin-top: 35%;
   @include breakpoint-up(large) {
     margin-top: 8%;
-    // img {
-    //   width: 40%;
-    // }
+    img {
+      width: 40%;
+    }
+  }
+  @include breakpoint-down(small) {
+    margin-top: 8%;
+    img {
+      width: 25%;
+    }
   }
 }
 .container_zellan_text {
