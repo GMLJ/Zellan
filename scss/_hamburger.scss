@@ -74,9 +74,8 @@ nav {
     pointer-events: all;
   }
   @include breakpoint-up(medium) {
-    padding: 0 0 10% 10%;
+    padding: 5% 6% 5% 0;
     align-items: flex-end;
-    padding-right: 6%;
   }
 }
 /* OPTIONS APPEAR ONE BY ONE */
