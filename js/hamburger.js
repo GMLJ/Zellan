@@ -19,8 +19,6 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("open");
   nav.classList.toggle("display");
   canopy.classList.toggle("open");
-  //canopy.classList.toggle('fade');
   body.classList.toggle("open");
-  //rotation
   secondLine.classList.toggle("hamburgerRotate");
 });
