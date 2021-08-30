@@ -1,3 +1,36 @@
+.closeBtn {
+  position: fixed;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  left: 2rem;
+  top: 3rem;
+  z-index: 99;
+  border-radius: 5px;
+}
+
+.closeBtnOne {
+  transform: rotate(45deg);
+  width: 60px;
+  height: 8px;
+  background: red;
+  @media screen and (max-width: 600px) {
+    width: 30px;
+    height: 4px;
+  }
+}
+.closeBtnTwo {
+  transform: rotate(-45deg);
+
+  width: 60px;
+  height: 8px;
+  background: red;
+  @media screen and (max-width: 600px) {
+    width: 30px;
+    height: 4px;
+  }
+}
+
 .gallery-section {
   background-color: #eee;
   display: flex;
