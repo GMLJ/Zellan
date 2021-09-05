@@ -4,6 +4,7 @@
   justify-content: center;
   color: $ZPink;
   margin-bottom: 20rem;
+  font-size: 1.7rem;
 }
 .article_text {
   display: flex;
@@ -16,13 +17,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  @include breakpoint-up(large) {
-    grid-area: b;
-    padding-left: 10%;
-  }
+  // @include breakpoint-up(large) {
+  //   grid-area: b;
+  //   padding-left: 10%;
+  // }
 }
 
 .article_text h2 {
+  margin: 0 10%;
   font-size: 2rem;
   @include breakpoint-down(small) {
     align-self: center;
@@ -33,4 +35,12 @@
   @include breakpoint-up(large) {
     font-size: 5rem;
   }
+}
+
+.container_article p {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 3rem;
+  margin: 0 10%;
+  color: #1b75bc;
 }
