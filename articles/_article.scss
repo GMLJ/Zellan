@@ -78,3 +78,30 @@
     margin: 0 5%;
   }
 }
+
+.blog_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: $ZPink;
+  color: white;
+  padding: 1rem;
+  @include breakpoint-down(small) {
+    padding: 0.15rem;
+  }
+}
+.blog_footer p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  @include breakpoint-down(small) {
+    font-size: 0.5rem;
+  }
+}
+.arrow {
+  color: white;
+  font-size: 2rem;
+  @include breakpoint-down(small) {
+    font-size: 1rem;
+  }
+}
