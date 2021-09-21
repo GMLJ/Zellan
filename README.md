@@ -22,8 +22,8 @@ The center is now closed due to the tense political situation in the country. Th
 - Editing and publishing the ebooks by Alexander A. Hizikias 📚
 
 ## 🔗 &nbsp; Links
-[<img align="left" alt="codeSTACKr.com" width="36px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="Zellan | Instagram" width="36px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="codeSTACKr.com" width="36px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />][website]
+[<img align="left" alt="Zellan | Instagram" width="36px" src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" />][instagram]
 </br>
 </br>
 
