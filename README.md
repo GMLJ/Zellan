@@ -38,5 +38,12 @@ The center is now closed due to the tense political situation in the country. Th
 <img align="left" alt="GitHub" width="36px" src="https://cdn-icons-png.flaticon.com/512/270/270798.png" />
 <img align="left" alt="Terminal" width="36px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 
+</br>
+</br>
+
+## 📚 &nbsp; Librairies
+[<img align="left" alt="Visual Studio Code" width="36px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" />][greensock]
+
 [website]: https://zellan.art/index.html
 [instagram]: https://www.instagram.com/zellancreatives/
+[greensock]: https://greensock.com/
