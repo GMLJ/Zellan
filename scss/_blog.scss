@@ -66,21 +66,6 @@
   }
 }
 
-@include breakpoint-up(small) {
-  .blogContainer {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-  }
-
-  .blogSnapCenter {
-    scroll-snap-align: center;
-  }
-  .blogSnapStart {
-    scroll-snap-align: start;
-  }
-}
-
 .article {
   & img {
     width: 10vw;

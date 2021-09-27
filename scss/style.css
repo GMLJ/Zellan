@@ -1156,21 +1156,6 @@ li.fade {
   }
 }
 
-@media (min-width: 48em) {
-  .blogContainer {
-    height: 100vh;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-  }
-  .blogSnapCenter {
-    scroll-snap-align: center;
-  }
-  .blogSnapStart {
-    scroll-snap-align: start;
-  }
-}
-
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
