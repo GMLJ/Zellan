@@ -41,7 +41,7 @@ The center is now closed due to the tense political situation in the country. Th
 </br>
 </br>
 
-## 📚 &nbsp; Librairies
+## 📚 &nbsp; Librairies / Frameworks
 [<img align="left" alt="Visual Studio Code" width="36px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" />][greensock]
 
 [website]: https://zellan.art/index.html
